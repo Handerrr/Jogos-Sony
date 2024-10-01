@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3 {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #1146d8;
+    color: #ecf0f1;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+header nav li a {
+    color:#ecf0f1;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+header  .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;   
+}
+
+.lista-veiculos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 22%;
+    margin: 0 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119750;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: auto;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+    header nav li {
+        display: block; 
+        margin: 8px 0; 
+        font-size: 16px;
+    }
+    
+    header .container,
+    section .container {
+    display: block;
+}
+
+    .lista-veiculos {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .lista-veiculos li {
+        max-width: 100%; 
+        margin: 10px 0;     
+    }
+
+    .store-front {
+        max-width: 100%;
+        margin-right: 0; 
+        margin-bottom: 16px; 
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header nav li {
+        display: inline; 
+        margin-left: 10px; 
+        font-size: 18px; 
+    }
+
+    header .container,
+    section .container {
+        display: block;
+    }
+
+    .lista-veiculos {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    .lista-veiculos li {
+        list-style: none;
+        max-width: 47%;
+        margin: 0 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista-veiculos li img {
+        max-width: 100%;
+        height: auto;
+        padding-top:8px;
+    }
+
+    .store-front {
+        max-width: 100%;
+        margin-right: 16px; 
+        margin-bottom: 16px; 
+    }
+}
+
